@@ -6,6 +6,7 @@ from pilot_coach.application.services.progress_service import ProgressService
 from pilot_coach.application.services.retrieval_service import RetrievalService
 from pilot_coach.application.services.scenario_service import ScenarioService
 from pilot_coach.infrastructure.repositories.sqlite_session_repository import SQLiteSessionRepository
+from pilot_coach.infrastructure.vectorstores.local_store import LocalVectorStore
 from pilot_coach.infrastructure.vectorstores.pinecone_store import PineconeStore
 from pilot_coach.infrastructure.llm.openai_provider import OpenAIProvider
 
@@ -16,8 +17,11 @@ def get_llm_provider() -> OpenAIProvider:
 
 
 @lru_cache
-def get_vector_store() -> PineconeStore:
-    return PineconeStore()
+def get_vector_store() -> PineconeStore | LocalVectorStore:
+    pinecone_store = PineconeStore()
+    if pinecone_store.enabled:
+        return pinecone_store
+    return LocalVectorStore()
 
 
 @lru_cache

@@ -1,0 +1,52 @@
+[
+  {
+    "page_content": "Before flight, the pilot in command must verify required pilot documents, aircraft documents, and current medical and flight review status for legal operation.",
+    "metadata": {
+      "source_title": "Private Pilot Airplane ACS",
+      "section": "Area I - Preflight Preparation",
+      "page": 9,
+      "acs_code": "PA.I.A.K1",
+      "certificate_type": "private_pilot_airplane"
+    }
+  },
+  {
+    "page_content": "Use the PAVE checklist to evaluate personal condition, aircraft capability, enVironment, and external pressures before departure.",
+    "metadata": {
+      "source_title": "Risk Management Handbook",
+      "section": "Personal and Aeronautical Risk",
+      "page": 4,
+      "acs_code": "PA.I.A.R1",
+      "certificate_type": "private_pilot_airplane"
+    }
+  },
+  {
+    "page_content": "A weather briefing should include ceilings, visibility, winds, NOTAMs, and convective activity affecting route and alternate planning.",
+    "metadata": {
+      "source_title": "Pilot's Handbook of Aeronautical Knowledge",
+      "section": "Weather Theory and Services",
+      "page": 12,
+      "acs_code": "PA.I.A.K2",
+      "certificate_type": "private_pilot_airplane"
+    }
+  },
+  {
+    "page_content": "For cross-country planning, pilots should compute fuel burn with reserves, checkpoints, true course, and groundspeed under forecast winds.",
+    "metadata": {
+      "source_title": "Airplane Flying Handbook",
+      "section": "Cross-Country Flight Planning",
+      "page": 22,
+      "acs_code": "PA.I.C.K1",
+      "certificate_type": "private_pilot_airplane"
+    }
+  },
+  {
+    "page_content": "When risk trends upward during flight, use the 3P process: Perceive hazards, Process impact, and Perform by implementing a safer plan.",
+    "metadata": {
+      "source_title": "Risk Management Handbook",
+      "section": "3P Decision Process",
+      "page": 10,
+      "acs_code": "PA.III.B.R2",
+      "certificate_type": "private_pilot_airplane"
+    }
+  }
+]

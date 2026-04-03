@@ -1,5 +1,3 @@
-from collections.abc import Sequence
-
 from pilot_coach.domain.ports.vector_store_port import VectorStorePort
 from pilot_coach.shared.settings import settings
 
@@ -16,6 +14,10 @@ class PineconeStore(VectorStorePort):
         self.index_name = settings.pinecone_index_name
         self.client = Pinecone(api_key=settings.pinecone_api_key) if self._enabled else None
         self.index = self.client.Index(self.index_name) if self._enabled else None
+
+    @property
+    def enabled(self) -> bool:
+        return self._enabled
 
     async def similarity_search(
         self,
